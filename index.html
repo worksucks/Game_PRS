@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>Gra Kamień Papier Nożyce</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+
+<div class="container">
+    <button id="NewGameBtn">Nowa Gra</button><br>
+    <div id="NumberOfRounds"> </div>
+    <button id="PaperBtn" data-move="Papier" class="player-move">Papier</button>
+    <button id="ScissorsBtn" data-move="Nożyce" class="player-move">Nożyce</button>
+    <button id="RockBtn" data-move="Kamień" class="player-move">Kamień</button>
+
+    <div id="PlayerChoice"></div>
+    <div id="ComputerChoice"></div>
+    <div id="PlayerScore"></div>
+    <div id="ComputerScore"></div>
+    <button id="GameResetBtn">Resetuj Grę</button>
+
+    <section class="modalResults" id="resultsModal">
+    <div class="modal-body">
+     <form>
+       <h3>WYNIKI GRY</h3>
+       <h3 class="closeX" id="close_X"> X </h3>
+       <h4 id="final_result"></h4>
+       <table>
+                        <thead>
+                              <tr class="head">
+                                <th>Numer rundy</th>
+                                <th>Ruch gracza</th>
+                                <th>Ruch Komputera</th>
+                                <th>Wynik Rundy</th>
+                              </tr>
+                        </thead>
+                    <tbody>
+                    </tbody>
+        </table>
+      </form>
+     </div>
+    </section>
+  </div> <!-- End of container -->
+<script  src="js/index.js"></script>
+</body>
+
+</html>
